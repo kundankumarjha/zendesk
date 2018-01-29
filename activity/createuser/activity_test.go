@@ -41,8 +41,10 @@ func TestEval(t *testing.T) {
 	tc := test.NewTestActivityContext(getActivityMetadata())
 
 	//setup attrs
+	tc.SetInput(companyUrl, "https://kundantest.zendesk.com")
+	tc.SetInput(oAuthToken, "aXQua3VuZGFubWNhQGdtYWlsLmNvbS90b2tlbjpNZG1iR1ZxTUQweXlqdkVZd3VsRzJMSWlYVGdTWVlrdW9wcnFpSmNW")
 	tc.SetInput(name, "Test")
-	tc.SetInput(externalID, "testid")
+	tc.SetInput(email, "abc111@gmail.com")
 
 	act.Eval(tc)
 
@@ -51,6 +53,5 @@ func TestEval(t *testing.T) {
 	if name != "Test" {
 		t.Error("Name did not match")
 	}
-
 }
 

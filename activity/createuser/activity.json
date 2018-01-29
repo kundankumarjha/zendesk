@@ -10,7 +10,7 @@
     {
       "name": "companyUrl",
       "type": "string",
-      "value": "https://<subdomain>.zendesk.com/"
+      "value": "https://<subdomain>.zendesk.com"
     },
     {
       "name": "oAuthToken",
