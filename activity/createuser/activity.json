@@ -1,0 +1,58 @@
+{
+  "name": "zendesk-createuser",
+  "type": "flogo:activity",
+  "ref": "github.com/kundankumarjha/zendesk/activity/createuser",
+  "version": "0.0.1",
+  "title": "Create User under Zendesk",
+  "description": "Zendesk Create User Activity",
+  "homepage": "https://github.com/kundankumarjha/zendesk/activity/createuser",
+  "inputs":[
+    {
+      "name": "companyUrl",
+      "type": "string",
+      "value": "https://<subdomain>.zendesk.com/"
+    },
+    {
+      "name": "oAuthToken",
+      "type": "string"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "email",
+      "type": "string"
+    },
+    {
+      "name": "role",
+      "type": "string"
+    },
+    {
+      "name": "phoneNumber",
+      "type": "string"
+    },
+    {
+      "name": "alias",
+      "type": "string"
+    },
+    {
+      "name": "externalID",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "userId",
+      "type": "integer"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "externalId",
+      "type": "string"
+    }
+  ]
+}
